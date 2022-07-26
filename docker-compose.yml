@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: terminal-command-kata
+    tty: true
+    command: tail -f /dev/null
