@@ -11,6 +11,7 @@ RUN yes | apt install curl
 RUN yes | apt install wget
 RUN yes | apt install at
 RUN apt install cron
+RUN yes | apt install file
 
 RUN ls
 RUN mkdir Pictures
@@ -23,7 +24,6 @@ RUN cd Documents
 RUN pwd
 RUN mkdir dev
 RUN cd
-RUN cd ./Documents/dev
 RUN cd ..
 RUN touch file.txt
 RUN file file.txt
@@ -48,6 +48,16 @@ RUN yes | rm -i myFile
 RUN mv dir1 dir2
 RUN ls dir1
 RUN rm -ri dir1
+RUN touch information.txt
+RUN echo 'Bacon ipsum dolor amet jowl picanha drumstick turducken short ribs. Salami drumstick ribeye doner pastrami shankle corned beef burgdoggen short loin cow spare ribs landjaeger meatball prosciutto pork chop. Hamburger swine kevin, tenderloin shoulder chuck flank sausage short ribs. Tri-tip fatback porchetta meatloaf jowl cow sausage. Chuck meatball prosciutto salami pork ribeye picanha swine. Corned beef salami tail drumstick meatball pork chop kielbasa strip steak shankle fatback short loin meatloaf capicola burgdoggen. Pancetta tri-tip leberkas spare ribs ground round brisket. Pork prosciutto jerky swine. Pancetta brisket cow chislic capicola buffalo pastrami meatball bacon leberkas tail pork belly venison. T-bone jowl short ribs bacon rump doner ham beef ribs alcatra ground round. Drumstick landjaeger turkey, andouille salami tenderloin pastrami pork strip steak sausage kevin meatball.' > & \
+information.txt
+RUN head information.txt
+RUN head information.txt -n 15
+RUN tail information.txt
+RUN tail information.txt -n 20
+# RUN less information.txt
+# RUN open information.txt For mac
+# RUN xdg-open information.txt For Linux
 
 
 
