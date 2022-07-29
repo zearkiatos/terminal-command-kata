@@ -55,6 +55,15 @@ RUN head information.txt
 RUN head information.txt -n 15
 RUN tail information.txt
 RUN tail information.txt -n 20
+RUN type cd
+RUN type mkdir
+RUN tyle ls
+RUN alias l="ls -lh"
+RUN help
+RUN help ls
+RUN man cd
+RUN info cd
+RUN whatis cd
 # RUN less information.txt
 # RUN open information.txt For mac
 # RUN xdg-open information.txt For Linux
