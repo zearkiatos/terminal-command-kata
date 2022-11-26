@@ -86,3 +86,18 @@ RUN yes | apt install file
 # RUN ls -d [[:lower:]]
 # RUN ls [ad]*
 # RUN ls [ai]*
+RUN mkdir Pictures
+RUN touch Pictures/image.png
+RUN ls Pictures
+RUN ls Pictures > myFiles.txt
+RUN cat myFiles.txt
+RUN mkdir Downloads
+RUN touch Downloads/download.txt
+RUN ls Downloads >> myFiles.txt
+RUN cat myFiles.txt
+RUN ls uehduehd 2> error.txt
+RUN cat error.txt
+RUN ls dehdueh >> output.txt 2>&1
+RUN head output.txt
+RUN ls Documents/ > output.txt 2>&1
+RUN 
