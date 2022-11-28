@@ -86,18 +86,29 @@ RUN yes | apt install file
 # RUN ls -d [[:lower:]]
 # RUN ls [ad]*
 # RUN ls [ai]*
-RUN mkdir Pictures
-RUN touch Pictures/image.png
-RUN ls Pictures
-RUN ls Pictures > myFiles.txt
-RUN cat myFiles.txt
-RUN mkdir Downloads
-RUN touch Downloads/download.txt
-RUN ls Downloads >> myFiles.txt
-RUN cat myFiles.txt
-RUN ls uehduehd 2> error.txt
-RUN cat error.txt
-RUN ls dehdueh >> output.txt 2>&1
-RUN head output.txt
-RUN ls Documents/ > output.txt 2>&1
-RUN 
+# RUN mkdir Pictures
+# RUN touch Pictures/image.png
+# RUN ls Pictures
+# RUN ls Pictures > myFiles.txt
+# RUN cat myFiles.txt
+# RUN mkdir Downloads
+# RUN touch Downloads/download.txt
+# RUN ls Downloads >> myFiles.txt
+# RUN cat myFiles.txt
+# RUN ls uehduehd 2> error.txt
+# RUN cat error.txt
+# RUN ls dehdueh >> output.txt 2>&1
+# RUN head output.txt
+# RUN ls Documents/ > output.txt 2>&1
+RUN yes | apt install less
+RUN echo "Hello Platzi"
+RUN touch error.txt
+RUN echo "Add an error" > error.txt
+RUN touch file.txt
+RUN echo "This is a file" > file.txt
+RUN cat error.txt file.txt
+RUN ls -lh
+RUN ls -lh | less | tee output.txt
+RUN yes | apt-get install cowsay
+RUN yes | apt-get install lolcat
+RUN cowsay "Hello world" | lolcat
