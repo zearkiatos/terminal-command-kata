@@ -17,3 +17,17 @@
 `cat` Concat two outputs
 
 `tee` created a file base in an output
+
+`;` execute *synchrom* way the specificationed commands
+
+`&` execute *asynchrom* way the specificationed commands
+
+`&&` execute the command if the last was executed correctly
+
+`||` Execution the command if the last or the combination of lasts were truety
+
+`echo` Print the message indicated
+
+`cal` Print the calendar with the currect date
+
+`date` Print the current date

@@ -111,4 +111,12 @@ RUN ls -lh
 RUN ls -lh | less | tee output.txt
 RUN yes | apt-get install cowsay
 RUN yes | apt-get install lolcat
-RUN cowsay "Hello world" | lolcat
+# RUN yes | apt-get install cal
+# RUN cowsay "Hello world" | lolcat
+# RUN ls; mkdir hello; cal
+# RUN ls & date & cal
+RUN mkdir test && cd test
+RUN pwd
+RUN cd fake-dir && touch file.txt && echo "File created"
+RUN cd fake-dir || touch file.txt || echo "File created"
+RUN cd fake-dir || echo "Change directory"
