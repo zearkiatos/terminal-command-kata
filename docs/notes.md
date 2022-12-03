@@ -31,3 +31,32 @@
 `cal` Print the calendar with the currect date
 
 `date` Print the current date
+
+`-` It is a normal file, as an text document, a photo a video, etc
+
+`d` To directory is an directory
+
+`|` It is a link symbol
+
+`b` Special blocks are files that manage information to the system, as the hard disk information
+
+# Permissions
+
+`rwx = 1 1 1` Owner
+
+`r-x = 1 0 1` Group
+
+`r-x = 1 0 1` World
+
+`Octal model` 7 5 5
+
+* Symbol mode
+
+`u` Only for users
+
+`g` Only for group
+
+`o` Only for others (It is the world)
+
+`a` Apply for all
+
