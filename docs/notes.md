@@ -60,3 +60,34 @@
 
 `a` Apply for all
 
+# Manage Permissions
+
+| Owner             |Group   | Others  |
+|-------------------|--------|---------|
+|u (of user)        | g      |o        |
+
+| Operator            |Function                 |
+|---------------------|-------------------------|
+|+                    | Add a permission        |
+|-                    | Quiet a permission      |
+|=                    | Assign a permission     |
+
+# Command table whoami, su and chmod
+|Command     |Function                                                |
+|------------|--------------------------------------------------------|
+|whoami      |Show the user with you are working                      |
+|su          |*Switch User* Change the user that you specificated     |
+|chmod       |Change the file permissions                             |
+|chown       |*Change Owner* Change the property of a file            |
+
+# Octal table permissions
+|Octal Value |File permissions set    |Permissions Descriptions              |Binary representation              |
+|------------|------------------------|--------------------------------------|-----------------------------------|                              
+|0           |---                     |No permissions                        |000                                |
+|1           |--x                     |Execute permission only               |001                                |
+|2           |-w-                     |Write permission only                 |010                                |
+|3           |-wx                     |Write and execute permissions         |011                                |
+|4           |r--                     |Read permission only                  |100                                |
+|5           |r-x                     |Read and execute permissions          |101                                |
+|6           |rw-                     |Read and write permissions            |110                                |
+|7           |rwx                     |Read, write and execute permissions   |111                                |

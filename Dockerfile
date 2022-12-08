@@ -115,8 +115,26 @@ RUN yes | apt-get install lolcat
 # RUN cowsay "Hello world" | lolcat
 # RUN ls; mkdir hello; cal
 # RUN ls & date & cal
-RUN mkdir test && cd test
+# RUN mkdir test && cd test
+# RUN pwd
+# RUN cd fake-dir && touch file.txt && echo "File created"
+# RUN cd fake-dir || touch file.txt || echo "File created"
+# RUN cd fake-dir || echo "Change directory"
+RUN mkdir sandbox
+RUN cd sandbox
+RUN touch mytext.txt
+RUN echo "Hello friend" > mytext.txt
+RUN echo "From Platzi" >> mytext.txt
+RUN cat mytext.txt
+RUN ls -l
+RUN chmod 755 mytext.txt
+RUN ls -l
+RUN chmod u-r mytext.txt
+RUN chmod u+r mytext.txt
+RUN chmod u-x,go=w mytext.txt
+RUN whoami
+RUN id
+RUN su root
 RUN pwd
-RUN cd fake-dir && touch file.txt && echo "File created"
-RUN cd fake-dir || touch file.txt || echo "File created"
-RUN cd fake-dir || echo "Change directory"
+RUN rm rootfile
+# RUN passwd 
