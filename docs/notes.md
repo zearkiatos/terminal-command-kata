@@ -60,3 +60,23 @@
 
 `a` Apply for all
 
+# Manage Permissions
+
+| Owner             |Group   | Others  |
+|-------------------|--------|---------|
+|u (of user)        | g      |o        |
+
+| Operator            |Function                 |
+|---------------------|-------------------------|
+|+                    | Add a permission        |
+|-                    | Quiet a permission      |
+|=                    | Assign a permission     |
+
+# Command table whoami, su and chmod
+|Command     |Function                                                |
+|------------|--------------------------------------------------------|
+|whoami      |Show the user with you are working                      |
+|su          |*Switch User* Change the user that you specificated     |
+|chmod       |Change the file permissions                             |
+|chown       |*Change Owner* Change the property of a file            |
+
