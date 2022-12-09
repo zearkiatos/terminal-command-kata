@@ -91,3 +91,18 @@
 |5           |r-x                     |Read and execute permissions          |101                                |
 |6           |rw-                     |Read and write permissions            |110                                |
 |7           |rwx                     |Read, write and execute permissions   |111                                |
+
+# Environments variables
+* Default environment variables
+
+|Variable     |Content                                                             |
+|-------------|--------------------------------------------------------------------|
+|HOME         |Indicate the user Home                                              |
+|PATH         |Indicate the address where it is the binary that the system uses    |
+|BASH_VERSION |Indicate the bash version that it is using                          |
+|SHELL        |Shell address that it is using                                      |
+
+** Symbol link
+*Example:
+`ln -s [PATH] [Name of the link]`
+`printenv` -> Show variable environment

@@ -120,21 +120,28 @@ RUN yes | apt-get install lolcat
 # RUN cd fake-dir && touch file.txt && echo "File created"
 # RUN cd fake-dir || touch file.txt || echo "File created"
 # RUN cd fake-dir || echo "Change directory"
-RUN mkdir sandbox
-RUN cd sandbox
-RUN touch mytext.txt
-RUN echo "Hello friend" > mytext.txt
-RUN echo "From Platzi" >> mytext.txt
-RUN cat mytext.txt
-RUN ls -l
-RUN chmod 755 mytext.txt
-RUN ls -l
-RUN chmod u-r mytext.txt
-RUN chmod u+r mytext.txt
-RUN chmod u-x,go=w mytext.txt
-RUN whoami
-RUN id
-RUN su root
-RUN pwd
-RUN rm rootfile
+# RUN mkdir sandbox
+# RUN cd sandbox
+# RUN touch mytext.txt
+# RUN echo "Hello friend" > mytext.txt
+# RUN echo "From Platzi" >> mytext.txt
+# RUN cat mytext.txt
+# RUN ls -l
+# RUN chmod 755 mytext.txt
+# RUN ls -l
+# RUN chmod u-r mytext.txt
+# RUN chmod u+r mytext.txt
+# RUN chmod u-x,go=w mytext.txt
+# RUN whoami
+# RUN id
+# RUN su root
+# RUN pwd
+# RUN rm rootfile
 # RUN passwd 
+RUN mkdir Documents
+RUN cd Documents
+RUN mkdir dev
+RUN cd ..
+RUN ln -s Documents/dev Development
+RUN printenv
+RUN echo $HOME
