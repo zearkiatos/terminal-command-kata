@@ -145,3 +145,7 @@ RUN cd ..
 RUN ln -s Documents/dev Development
 RUN printenv
 RUN echo $HOME
+RUN find ./ -size f +100M -maxdepth 4 -name "*d"
+RUN find ./ -type f -name "*.pdf" -mindepth 2
+RUN find ./ -type d -name "*A" -maxdepth 5 -empty
+RUN find ./ -type df -name "*j*" -size +1b > LosArchivosJ.txt ; echo "Comando terminado con éxito"

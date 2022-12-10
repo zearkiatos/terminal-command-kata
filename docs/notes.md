@@ -106,3 +106,35 @@
 *Example:
 `ln -s [PATH] [Name of the link]`
 `printenv` -> Show variable environment
+
+# Searching commands
+
+`find` => It is search in the path example:
+`find [path-from-where-will-start-the-search] [options]`
+`by segment`=> example
+`find ./ -name *.png`
+`type` => it lets segment by type, example:
+`find ./ -type f -name "f*"`
+`size`=> it let segment by size example:
+`find ./ -size 4k`
+`find ./ -size -4k`
+`find ./ -size +4k`
+`empty` => searching by empty
+`find ./ -type d -empty`
+`d` => directories
+`f` => files
+`maxdepth & mindepth`=>Limit the searching
+`find ./ -type d -maxdepth 2`
+`find ./ -type d -mindepth 2`
+`find ./ | less`=> it lets yoy search by file
+`which` => search file
+
+
+|Option        |Function              |
+|--------------|----------------------|
+|-size         |Search by size        |
+|-mindepth     |Assign a minimun deep |
+|-maxdepth     |Assign a maximun deep |
+|-type         |Search by file type   |
+|-name         |Search by file name   |
+
