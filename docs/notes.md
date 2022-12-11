@@ -138,3 +138,19 @@
 |-type         |Search by file type   |
 |-name         |Search by file name   |
 
+# Using commands grep
+
+|Option  |Function                       |
+|--------|-------------------------------|
+|-m      |Limit the line of search       |
+|-c      |Count the occurrencies         |
+|-v      |Exclude the ocurrencies        |
+|-i      |Ignore the sensitive case      |
+
+# Using command wc
+|Option  |Function         |
+|--------|-----------------|
+|-l      |Numbers of lines |
+|-w      |Numbers of words |
+|-c      |Numbers of bits  |
+
