@@ -138,27 +138,30 @@ RUN yes | apt-get install lolcat
 # RUN pwd
 # RUN rm rootfile
 # RUN passwd 
-RUN mkdir Documents
-RUN cd Documents
-RUN mkdir dev
-RUN cd ..
-RUN ln -s Documents/dev Development
-RUN printenv
-RUN echo $HOME
-RUN find ./ -size f +100M -maxdepth 4 -name "*d"
-RUN find ./ -type f -name "*.pdf" -mindepth 2
-RUN find ./ -type d -name "*A" -maxdepth 5 -empty
-RUN find ./ -type df -name "*j*" -size +1b > LosArchivosJ.txt ; echo "Comando terminado con éxito"
-RUN grep Towers ./data/movies.csv
-RUN grep the ./data/movies.csv
-RUN grep -i the ./data/movies.csv
-RUN grep -i the ./data/movies.csv | less
-RUN grep -c the data/movies.csv
-RUN grep -ci the data/movies.csv
-RUN grep -v towers data/movies.csv
-RUN grep -vi towers data/movies.csv
-RUN grep -vi towers data/movies.csv > sintowers.txt
-RUN wc data/movies.csv
-RUN wc -l data/movies.csv
-RUN wc -w data/movies.csv
-RUN wc -c data/movies.csv
+# RUN mkdir Documents
+# RUN cd Documents
+# RUN mkdir dev
+# RUN cd ..
+# RUN ln -s Documents/dev Development
+# RUN printenv
+# RUN echo $HOME
+# RUN find ./ -size f +100M -maxdepth 4 -name "*d"
+# RUN find ./ -type f -name "*.pdf" -mindepth 2
+# RUN find ./ -type d -name "*A" -maxdepth 5 -empty
+# RUN find ./ -type df -name "*j*" -size +1b > LosArchivosJ.txt ; echo "Comando terminado con éxito"
+# RUN grep Towers ./data/movies.csv
+# RUN grep the ./data/movies.csv
+# RUN grep -i the ./data/movies.csv
+# RUN grep -i the ./data/movies.csv | less
+# RUN grep -c the data/movies.csv
+# RUN grep -ci the data/movies.csv
+# RUN grep -v towers data/movies.csv
+# RUN grep -vi towers data/movies.csv
+# RUN grep -vi towers data/movies.csv > sintowers.txt
+# RUN wc data/movies.csv
+# RUN wc -l data/movies.csv
+# RUN wc -w data/movies.csv
+# RUN wc -c data/movies.csv
+RUN curl wwww.google.com > index.html
+RUN wget www.google.com
+RUN traceroute www.google.com

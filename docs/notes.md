@@ -154,3 +154,21 @@
 |-w      |Numbers of words |
 |-c      |Numbers of bits  |
 
+# Networks utilities
+
+|Command         |Function                                                       |
+|----------------|---------------------------------------------------------------|
+|ifconfig        |Show the device network configuration                          |
+|ping            |Sending packages to an address to check its conectivity        |
+|curl            |Show by console the file return by the address                 |
+|wget            |Save the file returned by the address                          |
+|traceroute      |Get trace of the all servers                                   |
+|netstat         |Show the device network with the param "-i"                    |
+
+# Params for ping command
+
+|Option  |Function                      |
+|--------|------------------------------|
+|-c      |Limit the package sent        |
+|-s      |Specific the size of packages |
+
