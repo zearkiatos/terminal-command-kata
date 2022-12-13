@@ -172,3 +172,20 @@
 |-c      |Limit the package sent        |
 |-s      |Specific the size of packages |
 
+# Comprisse command
+
+`-f` => It means that you will compress a file
+
+|Option  |Function                                                                           |
+|--------|-----------------------------------------------------------------------------------|
+|c       |Compress                                                                           |
+|x       |Uncompress                                                                         |
+|z       |Specified what it will compress or uncompress it has ".tar.gz" or ".tgz" extension |
+|v       |Show what it is compress or uncompress                                             |
+
+# Zip commands
+
+|Option  |Function   |
+|--------|-----------|
+|zip     |Compress   |
+|unzip   |Uncompress |
