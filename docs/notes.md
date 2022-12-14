@@ -189,3 +189,11 @@
 |--------|-----------|
 |zip     |Compress   |
 |unzip   |Uncompress |
+
+# Commands to managment process
+
+|Command  |Function                                                                                           |
+|-----|-------------------------------------------------------------------------------------------------------|
+|ps   |Show a table with the process that it is execution                                                     |
+|top  |Show an interface with the process that it is execute the resources that consume aditional information |
+|kill |Kill a process that it was choose                                                                      |

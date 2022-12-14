@@ -165,12 +165,18 @@ RUN yes | apt-get install lolcat
 # RUN curl wwww.google.com > index.html
 # RUN wget www.google.com
 # RUN traceroute www.google.com
-RUN mkdir toCompress
-RUN cd toCompress
-RUN touch file file2 file3
-RUN cd ..
-RUN tar -cvf toCompress.tar toCompress
-RUN tar -cvzf toCompress.gz toCompress
-RUN tar -xzvf toCompress.tar.gz
-RUN zip -r toCompressInZip.zip
-RUN unzip toCompressInZip.zip
+# RUN mkdir toCompress
+# RUN cd toCompress
+# RUN touch file file2 file3
+# RUN cd ..
+# RUN tar -cvf toCompress.tar toCompress
+# RUN tar -cvzf toCompress.gz toCompress
+# RUN tar -xzvf toCompress.tar.gz
+# RUN zip -r toCompressInZip.zip
+# RUN unzip toCompressInZip.zip
+RUN ps
+RUN cat & ls
+RUN ps
+RUN cat & ls
+RUN top
+RUN top -u root
