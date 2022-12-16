@@ -174,9 +174,9 @@ RUN yes | apt-get install lolcat
 # RUN tar -xzvf toCompress.tar.gz
 # RUN zip -r toCompressInZip.zip
 # RUN unzip toCompressInZip.zip
-RUN ps
-RUN cat & ls
-RUN ps
-RUN cat & ls
-RUN top
-RUN top -u root
+# RUN ps
+# RUN cat & ls
+# RUN ps
+# RUN cat & ls
+# RUN top
+# RUN top -u root

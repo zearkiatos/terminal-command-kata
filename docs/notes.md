@@ -192,8 +192,18 @@
 
 # Commands to managment process
 
-|Command  |Function                                                                                           |
-|-----|-------------------------------------------------------------------------------------------------------|
-|ps   |Show a table with the process that it is execution                                                     |
-|top  |Show an interface with the process that it is execute the resources that consume aditional information |
-|kill |Kill a process that it was choose                                                                      |
+|Command  |Function                                                                                               |
+|---------|-------------------------------------------------------------------------------------------------------|
+|ps       |Show a table with the process that it is execution                                                     |
+|top      |Show an interface with the process that it is execute the resources that consume aditional information |
+|kill     |Kill a process that it was choose                                                                      |
+
+# VIM command table
+
+|Command   |Function                                                  |
+|----------|--------------------------------------------------------- |
+|vim       |Open and specified file. if this not exist it will create |
+|:q        |Close the editor                                          |
+|:w        |Save the changes                                          |
+|/[Search] |Search into the text                                      |
+|dd        |In the normal mode, it selected a line and erase it       |
