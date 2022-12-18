@@ -207,3 +207,17 @@
 |:w        |Save the changes                                          |
 |/[Search] |Search into the text                                      |
 |dd        |In the normal mode, it selected a line and erase it       |
+
+# Change a command shell by default
+`zsh` => chsh -s $(which zsh)
+
+* Install zsh
+`apt-get install zsh`
+
+* Install oh-my-zsh
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+* Install zsh theme powerlevel10k
+Link: https://github.com/romkatv/powerlevel10k
+`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.

@@ -180,3 +180,6 @@ RUN yes | apt-get install lolcat
 # RUN cat & ls
 # RUN top
 # RUN top -u root
+RUN apt-get install tilix
+RUN apt-get install zsh
+RUN chsh -s $(which zsh)
