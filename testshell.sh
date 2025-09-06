@@ -6,3 +6,11 @@ pwd
 
 # change to the root directory
 cd /
+
+# create a directory
+
+mkdir submissions
+
+mkdir archive
+
+mv submissions archive
