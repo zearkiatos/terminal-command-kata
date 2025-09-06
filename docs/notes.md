@@ -207,6 +207,7 @@
 |:w        |Save the changes                                          |
 |/[Search] |Search into the text                                      |
 |dd        |In the normal mode, it selected a line and erase it       |
+|h,j,k,l   |Move to the left, down, up and right respectively                    |
 
 # Change a command shell by default
 `zsh` => chsh -s $(which zsh)
@@ -221,3 +222,31 @@
 Link: https://github.com/romkatv/powerlevel10k
 `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
+
+# Bash Command
+
+|Command   |Using For                                                 |
+|----------|--------------------------------------------------------- |
+|cd        |Change directory                                          |
+|ls        |Command list used to show the content of the directory                                          |
+|rm        |Command to deleting uses to delete a file or a directory                                       |
+|mv |It uses to move the file or folder to another location                                      |
+|touch        |Let to create a new empty file or update a mark of time in a file      |
+|cp        |Let to make a copy of a file or folder    |
+|mkdir        |Create a new directory    |
+|pwd        |Print the work directory and show the current location in the shell    |
+|cat        |Let to read or concat a file |
+|less        |Show the content of a page file page to page |
+|grep        |Expres a global regular, let to search in the content in the file or folder |
+
+## ls command
+
+```sh
+$ ls -l
+```
+
+## man command
+
+```sh
+$ man ls
+```
