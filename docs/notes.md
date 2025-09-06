@@ -245,6 +245,10 @@ Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
 $ ls -l
 ```
 
+```sh
+$ ls -la
+```
+
 ## man command
 
 ```sh
