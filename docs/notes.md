@@ -262,3 +262,28 @@ $ man ls
 ```sh
 $ mkdir -p dir2/dir3
 ```
+
+## Handle files
+
+### File count counter
+```sh
+$ wc test1.txt -w
+```
+
+### Pipes
+#### Count the files inside a directory
+
+```sh
+ls | wc -w
+```
+
+#### Count the number of lines in a file
+```sh
+$ cat test1.txt | wc -w
+```
+
+#### For two or more files
+
+```sh
+$ cat test1.txt test2.txt | wc -w
+```
