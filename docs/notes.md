@@ -3,6 +3,59 @@
 `stdout 1`
 `stderr 2`
 
+|Name              | Command           |Value         |
+|------------------|-------------------|--------------|
+| Input            |stdin              | 0            |
+| Output           |stdout             | 1            |
+| Error            |stderr             | 2            |
+
+## Save standard input
+
+### Edit input
+```sh
+$ cat > input.txt
+```
+### Print input
+```sh
+$ cat < input.txt
+```
+## Using standard output
+
+### Passing the output data or result inside the file output.txt
+```sh
+$ ls -l > output.txt
+```
+
+## Standard error
+
+### Combined commands
+
+```sh
+$ [COMMAND] < input.txt > output.txt 2> error.txt
+```
+
+### for example
+
+```sh
+$ ls -l /bin/usr > error.txt
+```
+
+### Print the error output
+
+```sh
+$ ls -l /bin/usr 2> error.txt
+$ less error.txt
+```
+
+### Combined the error with a normal output
+
+```sh
+$ ls -l /bin/usr > error_output.txt 2>&1
+```
+
+
+
+
 # Commands
 `>` Redirect the output. By default redirect to the standard output
 
