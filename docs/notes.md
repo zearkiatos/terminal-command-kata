@@ -254,3 +254,11 @@ $ ls -la
 ```sh
 $ man ls
 ```
+
+## Handle directories
+
+### How to create Deep directories
+
+```sh
+$ mkdir -p dir2/dir3
+```
