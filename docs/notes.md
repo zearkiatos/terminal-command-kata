@@ -200,6 +200,27 @@ $ ls -l /bin/usr > error_output.txt 2>&1
 |-v      |Exclude the ocurrencies        |
 |-i      |Ignore the sensitive case      |
 
+## Standard search
+
+```sh
+$ grep John names.txt
+```
+## Ignore key sensitive
+```sh
+$ grep -i john names.txt
+```
+
+## Exactly searching
+
+```sh
+$ grep -w Johnny names.txt
+```
+
+## Combine command with grep
+
+```sh
+$ ls /bin | grep zip
+```
 # Using command wc
 |Option  |Function         |
 |--------|-----------------|
